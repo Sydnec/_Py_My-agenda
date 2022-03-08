@@ -3,19 +3,19 @@
 
 
 # class TpOdoo(http.Controller):
-#     @http.route('/tp_odoo/tp_odoo/', auth='public')
+#     @http.route('/my-agenda/my-agenda/', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/tp_odoo/tp_odoo/objects/', auth='public')
+#     @http.route('/my-agenda/my-agenda/objects/', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('tp_odoo.listing', {
-#             'root': '/tp_odoo/tp_odoo',
-#             'objects': http.request.env['tp_odoo.tp_odoo'].search([]),
+#         return http.request.render('my-agenda.listing', {
+#             'root': '/my-agenda/my-agenda',
+#             'objects': http.request.env['my-agenda.my-agenda'].search([]),
 #         })
 
-#     @http.route('/tp_odoo/tp_odoo/objects/<model("tp_odoo.tp_odoo"):obj>/', auth='public')
+#     @http.route('/my-agenda/my-agenda/objects/<model("my-agenda.my-agenda"):obj>/', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('tp_odoo.object', {
+#         return http.request.render('my-agenda.object', {
 #             'object': obj
 #         })
