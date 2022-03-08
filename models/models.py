@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class tp_odoo(models.Model):
-#     _name = 'tp_odoo.tp_odoo'
-#     _description = 'tp_odoo.tp_odoo'
+# class my-agenda(models.Model):
+#     _name = 'my-agenda.my-agenda'
+#     _description = 'my-agenda.my-agenda'
 
 #     name = fields.Char()
 #     value = fields.Integer()

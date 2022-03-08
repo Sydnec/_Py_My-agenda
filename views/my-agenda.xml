@@ -22,9 +22,9 @@
 -->
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="tp_odoo.list">
-      <field name="name">tp_odoo list</field>
-      <field name="model">tp_odoo.tp_odoo</field>
+    <record model="ir.ui.view" id="my-agenda.list">
+      <field name="name">my-agenda list</field>
+      <field name="model">my-agenda.my-agenda</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -37,18 +37,18 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="tp_odoo.action_window">
-      <field name="name">tp_odoo window</field>
-      <field name="res_model">tp_odoo.tp_odoo</field>
+    <record model="ir.actions.act_window" id="my-agenda.action_window">
+      <field name="name">my-agenda window</field>
+      <field name="res_model">my-agenda.my-agenda</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="tp_odoo.action_server">
-      <field name="name">tp_odoo server</field>
-      <field name="model_id" ref="model_tp_odoo_tp_odoo"/>
+    <record model="ir.actions.server" id="my-agenda.action_server">
+      <field name="name">my-agenda server</field>
+      <field name="model_id" ref="model_my-agenda_my-agenda"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -62,19 +62,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="tp_odoo" id="tp_odoo.menu_root"/>
+    <menuitem name="my-agenda" id="my-agenda.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="tp_odoo.menu_1" parent="tp_odoo.menu_root"/>
-    <menuitem name="Menu 2" id="tp_odoo.menu_2" parent="tp_odoo.menu_root"/>
+    <menuitem name="Menu 1" id="my-agenda.menu_1" parent="my-agenda.menu_root"/>
+    <menuitem name="Menu 2" id="my-agenda.menu_2" parent="my-agenda.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="tp_odoo.menu_1_list" parent="tp_odoo.menu_1"
-              action="tp_odoo.action_window"/>
-    <menuitem name="Server to list" id="tp_odoo" parent="tp_odoo.menu_2"
-              action="tp_odoo.action_server"/>
+    <menuitem name="List" id="my-agenda.menu_1_list" parent="my-agenda.menu_1"
+              action="my-agenda.action_window"/>
+    <menuitem name="Server to list" id="my-agenda" parent="my-agenda.menu_2"
+              action="my-agenda.action_server"/>
 -->
   </data>
 </odoo>
